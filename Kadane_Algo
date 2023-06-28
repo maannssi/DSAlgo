@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+class Solution {
+public:
+    int maxSubArray(vector<int>& v) {
+        long long sum=0,max=INT_MIN;
+        for(int i=0; i<v.size(); i++){
+            sum+=v[i];
+            if(sum>max){
+                max=sum;
+             } 
+        }
+    }
+};
